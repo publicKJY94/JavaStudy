@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+</head>
+
+<body>
+	<button id="btn">버튼을 누르면 요소를 생성합니다</button>
+</body>
+<script>
+	function addElem() {
+	var btn = document.getElementById('btn');
+		function func() {
+			document.body.append(document.createElement("div"));
+		}
+		btn.onclick = func;
+	}
+	btn.addEventListener('click',addElem);
+</script>
+
+</html>

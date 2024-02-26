@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<style>
+		/*요소 선택자*/
+		div, h1, ul, li{ 
+			color: blue;
+		}
+		/*클래스 선택자*/
+		.lnb{
+			color: pink;			
+		}
+		/*하위 선택자 - 하위의 모든 li태그에  */
+		.gnb li{
+			color: red;
+		}
+		/*자식 선택자 - 가장 가까운 하위요소*/
+		.gnb > li{
+			color: red;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="wrapper">
+		<div class="box">
+			<h1>타이틀 01</h1>
+			<ul class="gnb">
+				<li>베스트 상품</li>
+				<li>신상품</li>
+				<li>고객센터</li>
+			</ul>
+		</div>
+		<div class="box">
+			<h1>타이틀 02</h1>
+			<ul class="lnb">
+				<li>외투</li>
+				<li>후드티</li>
+				<li>바지</li>
+				<li>운동화</li>
+			</ul>
+		</div>
+	</div>
+</body>
+
+</html>

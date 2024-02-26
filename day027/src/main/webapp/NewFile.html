@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+</head>
+
+<body>
+
+</body>
+<script>
+	// 51~79까지 정수중에서 랜덤값 생성해서 저장
+	var randomNum2 = Math.trunc(Math.random() * 29 + 1);
+	console.log(randomNum2);
+	function inputNum() {
+		while (true) {
+			var ans = prompt('숫자를 입력하세요');
+			if (50 < ans && ans <= 79) {
+				break;
+			}
+			alert('51~79 사이의 값으로 입력하세요!');
+		}
+	}
+	if (ans == randomNum2) {
+		msg = '정답입니다! :D';
+	}else{
+		inputNum();
+	}
+	document.write(msg);
+	// 1~100까지 정수중에서 랜덤값 생성해서 저장
+	var randomNum = Math.trunc(Math.random() * 100 + 1);
+	console.log(randomNum);
+	// 1~100 UP? DOWN? 안내문구
+	var input = prompt('1~100 UP? DOWN?');
+	var cnt = 0;
+	// 작으면 UP, 크면 DOWN, 맞으면 정답입니다! :D
+	while (true) {
+		cnt++;
+		if (input == randomNum) {
+			alert('정답입니다! :D')
+			break;
+		}
+		input = prompt(msg());
+	}
+	document.write(cnt + '번만에 맞추셨습니다');
+	// 입력 값을 비교해서 조건을 돌려줌
+	function msg() {
+		if (input < randomNum) {
+			return 'UP';
+		}
+		return 'DOWN';
+	}
+</script>
+
+</html>

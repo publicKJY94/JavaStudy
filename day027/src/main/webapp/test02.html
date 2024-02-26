@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+</head>
+
+<body>
+
+</body>
+<script src="./assets/js/test01.js"></script>
+<script>
+	// 함수
+	function test(a, b) {
+		return a + b;
+	}
+	document.write(test(100, 200));
+	// 익명함수 > 사용하기 위해 변수명을 사용하여 변수에 저장해주고 변수를 호출하여 사용!
+	var func = function () {
+		var a = 1;
+		var b = 2;
+		console.log(a + b);
+	};
+	func();
+	
+	var func1 = (a,b) => console.log(a+b);
+	func1(1,2);
+</script>
+
+</html>
