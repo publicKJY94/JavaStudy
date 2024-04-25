@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		int count = sc.nextInt();
+		
+		int[] ar = new int[num];
+		
+		for(int i =0; i<count; i++) {
+			int min = sc.nextInt();
+			int max = sc.nextInt();
+			int input = sc.nextInt();
+			for(int j= min-1; j<max; j++) {
+				ar[j] = input;
+			}
+		}
+		for(int i = 0; i<num; i++) {
+			System.out.print(ar[i]+" ");
+		}
+	}
+}
