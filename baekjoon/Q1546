@@ -1,0 +1,19 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		List<Integer> ar = new ArrayList<Integer>();
+		int repeat = sc.nextInt();
+		int total = 0;
+		for(int i = 0; i<repeat; i++) {
+			ar.add(sc.nextInt());
+			total += ar.get(i);
+		}
+		int max = Collections.max(ar);
+		System.out.println(total*1.0/repeat/max*100);
+	}
+}
